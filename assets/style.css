@@ -23,15 +23,25 @@ body{
   margin: 20px 0;
 }
 
+.wizards #errorpane {
+  display: none;
+}
+
 .wizards .WindowFrame {
   position: relative;
 }
 
 .wizards .BufferWindow {
   padding: 0;
+  top: 0 !important;
 }
 
 .wizards .GridWindow,
 .wizards .MorePrompt {
   display: none;
+}
+
+main #transcript {
+  margin-bottom: 60px;
+  width: 100%;
 }

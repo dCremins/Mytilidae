@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Devin Cremins - Wizards — Play</title>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta name="author" content="Devin Cremins">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <title>Wizards — Play</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content="Devin Cremins">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style.css">
 
-  <script src="interpreter/jquery.min.js"></script>
-<script src="interpreter/parchment.min.js"></script>
-<script src="interpreter/if-recorder.min.js"></script>
-<link rel="stylesheet" type="text/css" href="interpreter/parchment.css">
-<link rel="stylesheet" type="text/css" href="interpreter/i7-glkote.css">
-<link rel="stylesheet" type="text/css" href="interpreter/dialog.css">
-<script>
-parchment_options = {
-default_story: [ "Wizards.gblorb", "interpreter/Wizards.gblorb.js" ],
-lib_path: 'interpreter/',
-lock_story: 1,
-page_title: 0
-};
+    <script src="interpreter/jquery.min.js"></script>
+    <script src="interpreter/parchment.min.js"></script>
+    <script src="interpreter/if-recorder.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="interpreter/parchment.css"> -->
+    <link rel="stylesheet" type="text/css" href="interpreter/i7-glkote.css">
+    <link rel="stylesheet" type="text/css" href="interpreter/dialog.css">
+    <script>
+      parchment_options = {
+      default_story: [ "Wizards.gblorb", "interpreter/Wizards.gblorb.js" ],
+      lib_path: 'interpreter/',
+      lock_story: 1,
+      page_title: 0
+      };
 
-ifRecorder.saveUrl = "./tools/server/save-sql.php";
-ifRecorder.story.name = "Wizards";
-ifRecorder.story.version = "1";
-</script>
+      ifRecorder.saveUrl = "./tools/server/save-sql.php";
+      ifRecorder.story.name = "Wizards";
+      ifRecorder.story.version = "1";
+      ifRecorder.initialize(ifRecorder.saveUrl);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <h1><a href="http://mytilidae.com">Beware of Starfish</a><br />
+        <small>A development site for Devin Cremins</small></h1>
+      </header>
 
- </head>
-<body class="play">
-<div class="container">
-<div class="coverimage"><span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span></div>
-<div class="links">
-<div class="smalltitle">Wizards</div>
-<ul>
-<li><a href="index.html">Home page</a></li>
-</ul>
-</div>
+      <ol class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Wizards</a></li>
+        <li class="active">Game Demo</li>
+      </ol>
 
-<div id="gameport">
-<div id="about">
-<h1>Parchment</h1>
-<p>is an interpreter for Interactive Fiction. <a href="http://parchment.googlecode.com">Find out more.</a></p>
-<noscript><p>Parchment requires Javascript. Please enable it in your browser.</p></noscript>
-</div>
-<div id="parchment"></div>
-</div>
+      <main>
+        <div id="gameport" class="wizards">
+          <div id="parchment"></div>
+          </div>
+        <div class="interpretercredit"><a href="http://parchment.googlecode.com">Parchment for Inform 7</a></div>
+      </main>
+    </div>
 
-</div>
-<div class="interpretercredit"><a href="http://parchment.googlecode.com">Parchment for Inform 7</a></div>
-</body>
+    <footer class="sticky">
+      <div class="well well-sm">
+        All content is copyright <span class="glyphicon glyphicon-copyright-mark"></span> Devin Cremins.
+        See more of her work at <a href="http://octopusoddments.com">OctopusOddments.com</a>.
+      </div>
+    </footer>
+
+  </body>
 </html>
